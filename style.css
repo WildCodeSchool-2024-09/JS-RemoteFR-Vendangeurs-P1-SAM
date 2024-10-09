@@ -1,3 +1,14 @@
+:root {
+  --light1: #4f8c6f;
+  --light2: #48735f;
+  --light3: #bfbfbf;
+  --light4: #404040;
+  --light5: #0d0d0d;
+  --gray-1: #191919;
+  --gray-6: #000000;
+  --gray-7: #1e1e1e;
+}
+
 * {
   box-sizing: border-box;
   line-height: 1.5;
