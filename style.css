@@ -1,12 +1,9 @@
 :root {
-  --light1: #4f8c6f;
-  --light2: #48735f;
-  --light3: #bfbfbf;
-  --light4: #404040;
-  --light5: #0d0d0d;
-  --gray-1: #191919;
-  --gray-6: #000000;
-  --gray-7: #1e1e1e;
+  --bg-nav: #404040;
+  --txt-primary-clr: #0d0d0d;
+  --txt-secondary-clr: #f0f0f0;
+  --bg-card: #4f8c6f;
+  --bg-footer: #48735f;
 }
 
 * {
