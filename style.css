@@ -133,7 +133,6 @@ h2 {
 	justify-content: center;
 	align-items: center;
 }
-
 .card-front {
 	cursor: pointer;
 	background-color: var(--txt-secondary-clr);
@@ -430,3 +429,9 @@ header img {
 body nav section {
   display: none;
 }
+footer {
+  background-color: #48735f;
+  color: white;
+  text-align: center;
+}
+
