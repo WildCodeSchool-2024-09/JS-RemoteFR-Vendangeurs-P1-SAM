@@ -24,7 +24,9 @@ function createCard({
 			
 			<div class="card-back">
 			<div class="card-btn">
-				<button class="reset-this-card" aria-label="Fermer cette carte">x</button>
+				<button class="reset-this-card" aria-label="Fermer cette carte">
+				<i class="fa-solid fa-xmark"></i>
+				</button>
 			</div>
 			
 			<div class="card-content">
@@ -40,7 +42,7 @@ function createCard({
 			
 			<div class="card-contact">
 				<i class="fa-solid fa-envelope"></i>
-				<p>${email}</p>
+				<a href="mailto:${email}">${email}</a>
 			</div>
 			
 			<div class="card-social-links" role="navigation">
@@ -102,11 +104,10 @@ cardNodeList.forEach((cards, thisCard) => {
 		firstChildCard.classList.remove("active-front");
 		secondChildCard.classList.remove("active-back");
 	});
+	// BUTTON RESET CARDS
+	const buttonResetCard = document.querySelector(".reset-button");
+	buttonResetCard.addEventListener("click", () => {
+		firstChildCard.classList.remove("active-front");
+		secondChildCard.classList.remove("active-back");
+	});
 });
-
-// BUTTON RESET CARDS
-// const buttonResetCard = document.querySelector(".reset-button");
-// buttonResetCard.addEventListener("click", () => {
-// 	firstChildCard.classList.remove("active-front");
-// 	secondChildCard.classList.remove("active-back");
-// });
