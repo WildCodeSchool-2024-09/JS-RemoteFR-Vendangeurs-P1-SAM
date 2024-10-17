@@ -1,11 +1,11 @@
 :root {
-  --bg-nav: #404040;
-  --txt-primary-clr: #0d0d0d;
-  --txt-secondary-clr: #f0f0f0;
-  --bg-sectioncard: #4f8c6f;
-  --bg-footer: #48735f;
-  --bg-card: #f0f0f0;
-  --bg-button: rgb(48,48,48);
+	--bg-nav: #404040;
+	--txt-primary-clr: #0d0d0d;
+	--txt-secondary-clr: #f0f0f0;
+	--bg-sectioncard: #4f8c6f;
+	--bg-footer: #48735f;
+	--bg-card: #f0f0f0;
+	--bg-button: rgb(48, 48, 48);
 }
 
 @font-face {
@@ -15,7 +15,6 @@
 @font-face {
 	font-family: Roboto Slab;
 	src: url(/public/font/RobotoSlab-VariableFont_wght.ttf);
-	
 }
 
 * {
@@ -30,7 +29,7 @@ html {
 
 body {
 	margin: 0;
-	background-color:var(--bg-card);
+	background-color: var(--bg-card);
 	overflow-x: hidden;
 }
 
@@ -41,134 +40,132 @@ h3 {
 }
 
 header h1 {
-  display: none;
+	display: none;
 }
 
 header img {
-  width: 100%;
+	width: 100%;
 }
 
 /*DARKMODE*/
 
 .darkmode {
 	--bg-nav: #404040;
-	--txt-primary-clr:#f0f0f0 ;
+	--txt-primary-clr: #f0f0f0;
 	--txt-secondary-clr: #141414;
 	--bg-card: rgb(31, 29, 29);
 }
 
-
 #theme-switch {
-  height: 3rem;
-  width: 3rem;
-  padding: 0;
-  border-radius: 50%;
-  background-color: var(--bg-button);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  position: fixed;
-  top: 80px;
-  right: 15px;
-  z-index: 20;
+	height: 3rem;
+	width: 3rem;
+	padding: 0;
+	border-radius: 50%;
+	background-color: var(--bg-button);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	position: fixed;
+	top: 80px;
+	right: 15px;
+	z-index: 20;
 }
 
 #theme-switch svg {
-  fill: var(--primary-color)
+	fill: var(--primary-color);
 }
 
 #theme-switch svg:last-child {
-  display: none;
+	display: none;
 }
 
 .darkmode #theme-switch svg:first-child {
-  display: none;
+	display: none;
 }
 
 .darkmode #theme-switch svg:last-child {
-  display: block;
+	display: block;
 }
-
 
 /* BOUTON BURGER */
 
 .boutonBurger {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  z-index: 25;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	z-index: 25;
 }
 
 .span1 {
-  position: absolute;
-  top: 8px;
-  width: 100%;
-  height: 4px;
-  background-color:var(--bg-button);
-  transition-duration: 0.5s;
+	position: absolute;
+	top: 8px;
+	width: 100%;
+	height: 4px;
+	background-color: var(--bg-button);
+	transition-duration: 0.5s;
 }
 .span1Open {
-  transform: rotate(-45deg);
-  top: 16px;
+	transform: rotate(-45deg);
+	top: 16px;
 }
 .span2 {
-  position: absolute;
-  top: 18px;
-  width: 100%;
-  height: 4px;
-  background-color:var(--bg-button);
-  transition-duration: 0.5s;
+	position: absolute;
+	top: 18px;
+	width: 100%;
+	height: 4px;
+	background-color: var(--bg-button);
+	transition-duration: 0.5s;
 }
 .span2Open {
-  display: none;
+	display: none;
 }
 .span3 {
-  position: absolute;
-  top: 28px;
-  width: 100%;
-  height: 4px;
-  background-color:var(--bg-button);
-  transition-duration: 0.5s;
+	position: absolute;
+	top: 28px;
+	width: 100%;
+	height: 4px;
+	background-color: var(--bg-button);
+	transition-duration: 0.5s;
 }
 .span3Open {
-  transform: rotate(45deg);
-  top: 16px;
+	transform: rotate(45deg);
+	top: 16px;
 }
 
 /* MENU BURGER */
 
 .menuBurger {
-  position: fixed;
-  top: 0;
-  left: -100vw;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--bg-footer);
-  transition-duration: 0.5s;
-  z-index: 20;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	position: fixed;
+	top: 0;
+	left: -100vw;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--bg-footer);
+	transition-duration: 0.5s;
+	z-index: 20;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .menuBurgerOpen {
-  left: 0;
+	left: 0;
 }
 
-.menuBurger>a {
-  color: #f0f0f0;
-  margin: 20px 0 20px 0;
-  text-decoration: none;
-  font-size: 2em;
+.menuBurger > a {
+	color: #f0f0f0;
+	margin: 20px 0 20px 0;
+	text-decoration: none;
+	font-size: 2em;
 }
 
 body nav section {
-  display: none;
+	display: none;
 }
 
 /* Main Style */
@@ -203,10 +200,9 @@ h2 {
 	& h2 {
 		color: var(--txt-primary-clr);
 		margin: 0;
-
 	}
 
-	&  p {
+	& p {
 		max-width: 65ch;
 		font-size: 1rem;
 	}
@@ -424,8 +420,7 @@ h2 {
 }
 
 footer {
-  background-color: #48735f;
-  color: white;
-  text-align: center;
+	background-color: #48735f;
+	color: white;
+	text-align: center;
 }
-
