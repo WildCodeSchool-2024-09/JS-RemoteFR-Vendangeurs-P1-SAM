@@ -1,21 +1,5 @@
 const wildersList = [
 	{
-		img: "./public/img/img-wilders/maxime.png",
-		firstname: "Maxime",
-		lastname: "TRICOCHE",
-		desc: "Persévérant et curieux, je suis toujours désireux d'acquérir de nouvelles compétences",
-		skills: [
-			{
-				html: "fa-brands fa-html5",
-				css: "fa-brands fa-css3-alt",
-				javascript: "fa-brands fa-js",
-			},
-		],
-		email: "maxime.trche@gmail.com",
-		github: "https://github.com/maximetricoche",
-		linkedin: "https://www.linkedin.com/in/maxime-tricoche-a85142310/",
-	},
-	{
 		img: "./public/img/img-wilders/alexandre.jpg",
 		firstname: "Alexandre",
 		lastname: "HIANCE",
@@ -30,6 +14,22 @@ const wildersList = [
 		email: "alexandrehiance@gmail.com",
 		github: "https://github.com/Alexhian",
 		linkedin: "https://www.linkedin.com/in/alexandre-hiance-111718151/",
+	},
+	{
+		img: "./public/img/img-wilders/maxime.png",
+		firstname: "Maxime",
+		lastname: "TRICOCHE",
+		desc: "Persévérant et curieux, je suis toujours désireux d'acquérir de nouvelles compétences",
+		skills: [
+			{
+				html: "fa-brands fa-html5",
+				css: "fa-brands fa-css3-alt",
+				javascript: "fa-brands fa-js",
+			},
+		],
+		email: "maxime.trche@gmail.com",
+		github: "https://github.com/maximetricoche",
+		linkedin: "https://www.linkedin.com/in/maxime-tricoche-a85142310/",
 	},
 	{
 		img: "./public/img/img-wilders/sabrina.jpg",
@@ -51,7 +51,11 @@ const wildersList = [
 		firstname: "Benoît",
 		lastname: "VANDANJON",
 		desc: "Formateur de la meilleure promo !",
-		skills: [""],
+		skills: [
+			{
+				manger: "fa-solid fa-utensils",
+			},
+		],
 		email: "benoit@vandanjon.fr",
 		github: "https://github.com/Vandanjon",
 		linkedin: "https://www.linkedin.com/in/benoitvandanjon/",
