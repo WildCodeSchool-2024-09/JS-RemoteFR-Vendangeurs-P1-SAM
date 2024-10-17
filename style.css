@@ -435,6 +435,11 @@ h2 {
 		& .fa-figma {
 			color: #9c57f7;
 		}
+
+
+		& .fa-utensils {
+			color: red;
+		}
 	}
 
 	& .card-contact {

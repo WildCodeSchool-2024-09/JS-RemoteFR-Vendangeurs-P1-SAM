@@ -8,7 +8,7 @@ function createCard({
 	github,
 	linkedin,
 }) {
-	const defaultImg = "/public/img/img-wilders/default-user.png";
+	const defaultImg = "./public/img/img-wilders/default-user.png";
 	const imgSrc = img ? img : defaultImg;
 
 	const card = document.createElement("article");
