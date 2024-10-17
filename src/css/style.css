@@ -294,13 +294,12 @@ h2 {
 .card-back {
 	background-color: var(--txt-secondary-clr);
 	transform: rotateY(180deg);
-	display: flex;
-	flex-direction: column;
+	display: grid;
 	font-size: 1.2rem;
 	box-shadow: 0 0 6px 6px var(--bg-footer);
 
 	& .card-btn {
-		align-self: flex-end;
+		justify-self: end;
 		padding: 0.5rem 0.8rem 0 0;
 
 		& button {
@@ -312,7 +311,7 @@ h2 {
 			cursor: pointer;
 			border: none;
 			background: transparent;
-			font-size: 1.5rem;
+			font-size: 1.2rem;
 			border-radius: 50%;
 		}
 
@@ -341,14 +340,14 @@ h2 {
 		}
 	}
 
-	& .skills {
+	& .card-skills {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		height: 2rem;
 		padding: 2.5rem 0 1.2rem;
 
-		& ul {
+		& .skill-list {
 			list-style: none;
 			display: flex;
 			gap: 1.8rem;
@@ -370,26 +369,30 @@ h2 {
 		& .fa-js {
 			color: #e6c72e;
 		}
+
+		& .fa-figma {
+			color: #9c57f7;
+		}
 	}
 
-	& .contact {
+	& .card-contact {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		gap: 0.5rem;
 
 		& p {
-			font-size: 1.1rem;
+			font-size: 1rem;
 		}
 
 		& i {
 			font-size: 1.4rem;
-			transform: translatey(1px);
+			transform: translatey(2px);
 			color: var(--bg-card);
 		}
 	}
 
-	& .social-links {
+	& .card-social-links {
 		display: flex;
 		align-items: center;
 		justify-content: center;
