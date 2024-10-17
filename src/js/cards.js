@@ -102,11 +102,11 @@ cardNodeList.forEach((cards, thisCard) => {
 		firstChildCard.classList.remove("active-front");
 		secondChildCard.classList.remove("active-back");
 	});
-});
 
-// BUTTON RESET CARDS
-// const buttonResetCard = document.querySelector(".reset-button");
-// buttonResetCard.addEventListener("click", () => {
-// 	firstChildCard.classList.remove("active-front");
-// 	secondChildCard.classList.remove("active-back");
-// });
+	// BUTTON RESET CARDS
+	const buttonResetCard = document.querySelector(".reset-button");
+	buttonResetCard.addEventListener("click", () => {
+		firstChildCard.classList.remove("active-front");
+		secondChildCard.classList.remove("active-back");
+	});
+});

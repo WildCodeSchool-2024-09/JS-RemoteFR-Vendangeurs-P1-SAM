@@ -28,8 +28,7 @@ html {
 }
 
 body {
-  margin: 0;
-  overflow-x: hidden;
+	margin: 0;
 }
 
 h1,
@@ -166,8 +165,8 @@ body nav section {
 
 /* MAIN STYLE */
 main {
-  height: auto;
-  width: 100vw;
+	height: auto;
+	width: 100%;
 }
 
 h2 {
@@ -185,43 +184,62 @@ h2 {
 
 /* STYLE DESCRIPTION SECTION */
 .description {
-  height: auto;
-  min-height: 50vh;
-  width: 100vw;
-  background-color: var(--txt-secondary-clr);
-  color: var(--txt-primary-clr);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+	height: auto;
+	min-height: 50vh;
+	width: 100%;
+	background-color: var(--txt-secondary-clr);
+	color: var(--txt-primary-clr);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
 
-  & h2 {
-    color: var(--bg-card);
-    height: 20%;
-  }
+	& h2 {
+		color: var(--bg-card);
+		height: 20%;
+	}
 
-  & p {
-    max-width: 65ch;
-    font-size: 1rem;
-    height: 80%;
-  }
+	& p {
+		max-width: 65ch;
+		font-size: 1rem;
+		height: 80%;
+	}
+
 }
 
 /* STYLE CARDS SECTION*/
 .cards-section {
-  background-color: var(--bg-card);
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	background-color: var(--bg-card);
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
 
-  & h2 {
-    color: var(--txt-secondary-clr);
-    padding-bottom: 2rem;
-  }
+	& h2 {
+		color: var(--txt-secondary-clr);
+	}
+
+}
+
+.reset-button {
+	border: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 1rem 2rem;
+	border-radius: 10px;
+	background-color: var(--txt-secondary-clr);
+	color: var(--bg-card);
+	font-weight: bold;
+	box-shadow: 0 0 4px 4px var(--bg-footer);
+}
+
+.reset-button:hover {
+	background-color: whitesmoke;
+	color: rgb(90, 90, 90);
 }
 
 .cards-wrapper {
@@ -241,14 +259,15 @@ h2 {
 }
 
 .flip-card-container {
-  width: 19rem;
-  height: 27rem;
-  position: relative;
-  perspective: 1000px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 22rem;
+	height: 29rem;
+	position: relative;
+	perspective: 1000px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
 .card-front {
   cursor: pointer;
@@ -292,125 +311,127 @@ h2 {
 }
 
 .card-back {
-  background-color: var(--txt-secondary-clr);
-  transform: rotateY(180deg);
-  display: grid;
-  font-size: 1.2rem;
-  box-shadow: 0 0 6px 6px var(--bg-footer);
+	background-color: var(--txt-secondary-clr);
+	transform: rotateY(180deg);
+	display: grid;
+	grid-template-rows: 10% 50% 15% 10% 15% ;
+	font-size: 1.2rem;
+	box-shadow: 0 0 6px 6px var(--bg-footer);
 
-  & .card-btn {
-    justify-self: end;
-    padding: 0.5rem 0.8rem 0 0;
+	& .card-btn {
+		justify-self: end;
+		padding: 0.5rem 0.8rem 0 0;
 
-    & button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 1.5rem;
-      height: 1.5rem;
-      cursor: pointer;
-      border: none;
-      background: transparent;
-      font-size: 1.2rem;
-      border-radius: 50%;
-    }
+		& button {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 1.5rem;
+			height: 1.5rem;
+			cursor: pointer;
+			border: none;
+			background: transparent;
+			font-size: 1.2rem;
+			border-radius: 50%;
+		}
 
-    & button:hover {
-      color: red;
-    }
-  }
+		& button:hover {
+			color: red;
+		}
+	}
 
-  & .card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	& .card-content {
+		display: grid;
+		justify-items: center;
 
-    & h3 {
-      margin: 0.9rem;
-      color: var(--bg-card);
-    }
+		& h3 {
+			margin: 0.9rem;
+			color: var(--bg-card);
+		}
 
-    & p {
-      margin: 0;
-      padding: 0.3rem 0.3rem;
-      width: 100%;
-      font-size: 1rem;
-      font-style: italic;
-      width: 80%;
-    }
-  }
+		& p {
+			margin: 0;
+			padding: 0.3rem 0.3rem;
+			width: 100%;
+			font-size: 1rem;
+			font-style: italic;
+			width: 80%;
+			text-align: center;
+		}
+	}
 
-  & .card-skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2rem;
-    padding: 2.5rem 0 1.2rem;
+	& .card-skills {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 2rem;
+		padding: 2.5rem 0 1.2rem;
 
-    & .skill-list {
-      list-style: none;
-      display: flex;
-      gap: 1.8rem;
-      padding: 0;
-    }
+		& .skill-list {
+			list-style: none;
+			display: flex;
+			gap: 1.8rem;
+			padding: 0;
+		}
 
-    & i {
-      font-size: 2rem;
-    }
+		& i {
+			font-size: 2rem;
+		}
 
-    & .fa-html5 {
-      color: #fc470a;
-    }
+		& .fa-html5 {
+			color: #fc470a;
+		}
 
-    & .fa-css3-alt {
-      color: #274ce3;
-    }
+		& .fa-css3-alt {
+			color: #274ce3;
+		}
 
-    & .fa-js {
-      color: #e6c72e;
-    }
+		& .fa-js {
+			color: #e6c72e;
+		}
 
-    & .fa-figma {
-      color: #9c57f7;
-    }
-  }
+		& .fa-figma {
+			color: #9c57f7;
+		}
+	}
 
-  & .card-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+	& .card-contact {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
 
-    & p {
-      font-size: 1.1rem;
-    }
+		& p {
+			font-size: .9rem;
+		}
 
-    & i {
-      font-size: 1.4rem;
-      transform: translatey(1px);
-      color: var(--bg-card);
-    }
-  }
+		& i {
+			font-size: 1.4rem;
+			transform: translatey(2px);
+			color: var(--bg-card);
+		}
+	}
 
-  & .card-social-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.4rem;
-    padding: 0.8rem 0 0.8rem;
+	& .card-social-links {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1.4rem;
+		padding: 0.8rem 0 0.8rem;
 
-    & a {
-      color: #0d0d0d;
-    }
+		& a {
+			color: #0d0d0d;
+		}
 
-    & i {
-      font-size: 2rem;
-    }
+		& i {
+			font-size: 2rem;
+		}
 
-    & .fa-linkedin {
-      color: #0262c2;
-    }
-  }
+		& .fa-linkedin {
+			color: #0262c2;
+		}
+	}
+
 }
 
 .card-front,
