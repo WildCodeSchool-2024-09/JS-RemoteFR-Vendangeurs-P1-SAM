@@ -32,7 +32,7 @@ const wildersList = [
 		linkedin: "https://www.linkedin.com/in/alexandre-hiance-111718151/",
 	},
 	{
-		img: "",
+		img: "./public/img/img-wilders/sabrina.jpg",
 		firstname: "Sabrina",
 		lastname: "MEJRI",
 		desc: "Je fais de mon mieux pour avancer chaque jour",
@@ -89,6 +89,7 @@ const wildersList = [
 		linkedin: "www.linkedin.com/in/pennyteixeira",
 	},
 	{
+		img: "./public/img/img-wilders/marvin.jpg",
 		firstname: "Marvin",
 		lastname: "CALMO",
 		desc: "",
@@ -169,17 +170,23 @@ const wildersList = [
 		linkedin: "",
 	},
 	{
-		img: "",
+		img: "./public/img/img-wilders/laure.jpg",
 		firstname: "Laure",
 		lastname: "MAFFINI",
-		desc: "",
-		skills: "",
-		email: "",
-		github: "",
-		linkedin: "",
+		desc: "Déterminée à faire bouger les lignes !",
+		skills: [
+			{
+				html: "fa-brands fa-html5",
+				css: "fa-brands fa-css3-alt",
+				javascript: "fa-brands fa-js",
+			},
+		],
+		email: "lauremaffini@gmail.com",
+		github: "https://github.com/Leslaures",
+		linkedin: "https://www.linkedin.com/in/laure-maffini-9368b4139/",
 	},
 	{
-		img: "",
+		img: "./public/img/img-wilders/vincent.png",
 		firstname: "Vincent",
 		lastname: "CHING",
 		desc: "Curieux, motivé et passionné par le monde de la tech, j'adore les challenges",
@@ -205,7 +212,7 @@ const wildersList = [
 		linkedin: "",
 	},
 	{
-		img: "",
+		img: "./public/img/img-wilders/raphael.png",
 		firstname: "Raphaël",
 		lastname: "RIVIÈRE",
 		desc: "Curieux et toujours motivé pour apprendre de nouvelles choses et compétences.",
