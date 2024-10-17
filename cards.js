@@ -40,10 +40,15 @@ function createCard({
 				</ul>
 			</div>
 			
-			<div class="card-contact">
-				<i class="fa-solid fa-envelope"></i>
-				<a href="mailto:${email}">${email}</a>
-			</div>
+			${
+				email
+					? `
+				<div class="card-contact">
+					<i class="fa-solid fa-envelope"></i>
+					<a href="mailto:${email}">${email}</a>
+				</div>`
+					: ""
+			}
 			
 			<div class="card-social-links" role="navigation">
 				${
