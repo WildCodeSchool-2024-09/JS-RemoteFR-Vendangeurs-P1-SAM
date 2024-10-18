@@ -214,7 +214,7 @@ main {
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 3rem;
 	text-transform: uppercase;
 	text-align: center;
 	color: var(--title-primary-clr);
@@ -436,7 +436,6 @@ h2 {
 			color: #9c57f7;
 		}
 
-
 		& .fa-utensils {
 			color: red;
 		}
@@ -530,12 +529,23 @@ h2 {
 
 footer {
 	height: auto;
-	min-height: 20vh;
+	min-height: 25vh;
 	padding: 0 2rem;
 	background-color: var(--footer-bg);
 	color: var(--txt-secondary-clr);
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+
+	& a {
+		text-decoration: none;
+		color: var(--txt-secondary-clr);
+	}
+
+	& .credits {
+		display: flex;
+		flex-direction: column;
+	}
 }

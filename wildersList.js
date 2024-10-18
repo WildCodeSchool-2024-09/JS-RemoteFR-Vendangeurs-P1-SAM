@@ -1,6 +1,6 @@
 const wildersList = [
 	{
-		img: "./public/img/img-wilders/alexandre.jpg",
+		img: "./public/img/img-wilders/alexandre.png",
 		firstname: "Alexandre",
 		lastname: "HIANCE",
 		desc: "La meilleure façon de produire l'avenir est de le créer. - A. Lincoln",
@@ -32,7 +32,7 @@ const wildersList = [
 		linkedin: "https://www.linkedin.com/in/maxime-tricoche-a85142310/",
 	},
 	{
-		img: "./public/img/img-wilders/sabrina.jpg",
+		img: "./public/img/img-wilders/sabrina.png",
 		firstname: "Sabrina",
 		lastname: "MEJRI",
 		desc: "Je fais de mon mieux pour avancer chaque jour",
@@ -48,9 +48,10 @@ const wildersList = [
 		linkedin: "https://www.linkedin.com/in/sabrina-mejri-7880b632b/",
 	},
 	{
+		img: "./public/img/img-wilders/benoit.png",
 		firstname: "Benoît",
 		lastname: "VANDANJON",
-		desc: "Formateur de la meilleure promo !",
+		desc: "Tant que ça plante encore, c'est que l'ordi n'a pas brûlé !",
 		skills: [
 			{
 				manger: "fa-solid fa-utensils",
@@ -61,7 +62,7 @@ const wildersList = [
 		linkedin: "https://www.linkedin.com/in/benoitvandanjon/",
 	},
 	{
-		img: "./public/img/img-wilders/flavien.jpg",
+		img: "./public/img/img-wilders/flavien.png",
 		firstname: "Flavien",
 		lastname: "ROUSSEAU",
 		desc: "Motivaquoi ?",
@@ -77,7 +78,7 @@ const wildersList = [
 		linkedin: "https://www.linkedin.com/in/flavien-rousseau-444bbb199/",
 	},
 	{
-		img: "./public/img/img-wilders/penelope.jpg",
+		img: "./public/img/img-wilders/penelope.png",
 		firstname: "Pénélope",
 		lastname: "TEXEIRA",
 		desc: "",
@@ -93,7 +94,7 @@ const wildersList = [
 		linkedin: "www.linkedin.com/in/pennyteixeira",
 	},
 	{
-		img: "./public/img/img-wilders/marvin.jpg",
+		img: "./public/img/img-wilders/marvin.png",
 		firstname: "Marvin",
 		lastname: "CALMO",
 		desc: "",
@@ -109,7 +110,7 @@ const wildersList = [
 		linkedin: "https://www.linkedin.com/in/marvin-calmo-045571333/",
 	},
 	{
-		img: "./public/img/img-wilders/aurelia.jpg",
+		img: "./public/img/img-wilders/aurelia.png",
 		firstname: "Aurélia",
 		lastname: "GUARINO",
 		desc: "Je suis plus passionnée que jamais par le fait de pouvoir donner vie au design de mes maquettes grâce à mes compétences techniques.",
@@ -126,7 +127,7 @@ const wildersList = [
 		linkedin: "https://www.linkedin.com/in/aurélia-guarino-4778b5185/",
 	},
 	{
-		img: "./public/img/img-wilders/jeremy-p.jpg",
+		img: "./public/img/img-wilders/jeremy-p.png",
 		firstname: "Jeremy",
 		lastname: "PEREZ",
 		desc: "Curieux et motivé, j'adore chercher mes erreurs de typo !",
@@ -142,10 +143,10 @@ const wildersList = [
 		linkedin: "",
 	},
 	{
-		img: "./public/img/img-wilders/jeremy-t.jpg",
+		img: "./public/img/img-wilders/jeremy-t.png",
 		firstname: "Jérémy",
 		lastname: "TICHANÉ",
-		desc: "",
+		desc: "L'urgent est fait, l'impossible est en cours, pour les miracles prévoir un délai",
 		skills: [
 			{
 				html: "fa-brands fa-html5",
@@ -158,7 +159,7 @@ const wildersList = [
 		linkedin: "",
 	},
 	{
-		img: "./public/img/img-wilders/maxence.jpg",
+		img: "./public/img/img-wilders/maxence.png",
 		firstname: "Maxence",
 		lastname: "CHOISELLE",
 		desc: "Je sens bien que vous essayez de me dire quelque chose..",
@@ -174,7 +175,7 @@ const wildersList = [
 		linkedin: "",
 	},
 	{
-		img: "./public/img/img-wilders/laure.jpg",
+		img: "./public/img/img-wilders/laure.png",
 		firstname: "Laure",
 		lastname: "MAFFINI",
 		desc: "Déterminée à faire bouger les lignes !",
@@ -209,11 +210,17 @@ const wildersList = [
 		img: "",
 		firstname: "Mateusz",
 		lastname: "PLEBANEK",
-		desc: "",
-		skills: "",
-		email: "",
-		github: "",
-		linkedin: "",
+		desc: "Développeur passionné, toujours en quête d'excellence.",
+		skills: [
+			{
+				html: "fa-brands fa-html5",
+				css: "fa-brands fa-css3-alt",
+				javascript: "fa-brands fa-js",
+			},
+		],
+		email: "matprocom@gmail.com",
+		github: "https://github.com/MateuszPlebanek",
+		linkedin: "https://www.linkedin.com/in/mat-pleb",
 	},
 	{
 		img: "./public/img/img-wilders/raphael.png",
