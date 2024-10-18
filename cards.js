@@ -44,24 +44,24 @@ function createCard({
 				email
 					? `
 				<div class="card-contact">
-					<i class="fa-solid fa-envelope"></i>
+					<i class="fa-solid fa-envelope" aria-label="Icône enveloppe"></i>
 					<a href="mailto:${email}">${email}</a>
 				</div>`
 					: ""
 			}
 			
-			<div class="card-social-links" role="navigation">
+			<div class="card-social-links">
 				${
 					github
-						? `<a href="${github}" target="_blank">
-							<i class="fa-brands fa-github"></i>
+						? `<a href="${github}" target="_blank" rel="noopener noreferrer">
+							<i class="fa-brands fa-github" aria-label="Icône Github"></i>
 						</a>`
 						: ""
 				} 
 				${
 					linkedin
-						? `<a href="${linkedin}" target="_blank">
-							<i class="fa-brands fa-linkedin"></i>
+						? `<a href="${linkedin}" target="_blank" rel="noopener noreferrer">
+							<i class="fa-brands fa-linkedin" aria-label="Icône LinkedIn"></i>
 						</a>`
 						: ""
 				}
@@ -73,12 +73,12 @@ function createCard({
 
 // SHUFFLE BEFORE ADD CARDS
 const shuffle = (wildersList) => {
-	for (let i = wildersList.length -1; i > 0; i--){
+	for (let i = wildersList.length - 1; i > 0; i--) {
 		const j = Math.floor(Math.random() * (i + 1));
 		[wildersList[i], wildersList[j]] = [wildersList[j], wildersList[i]];
 	}
 	return wildersList;
-}
+};
 
 shuffle(wildersList);
 
