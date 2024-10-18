@@ -542,6 +542,7 @@ footer {
 	& a {
 		text-decoration: none;
 		color: var(--txt-secondary-clr);
+		font-weight: bold;
 	}
 
 	& .credits {
