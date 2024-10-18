@@ -71,6 +71,17 @@ function createCard({
 	return card;
 }
 
+// SHUFFLE BEFORE ADD CARDS
+const shuffle = (wildersList) => {
+	for (let i = wildersList.length -1; i > 0; i--){
+		const j = Math.floor(Math.random() * (i + 1));
+		[wildersList[i], wildersList[j]] = [wildersList[j], wildersList[i]];
+	}
+	return wildersList;
+}
+
+shuffle(wildersList);
+
 // ADD CARDS
 const wrapper = document.querySelector(".cards-wrapper");
 
